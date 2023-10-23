@@ -1,4 +1,4 @@
-# My WIP Senior Design Capstone
+# WIP Senior Design Capstone
 
 This is an ESP32 project that will demonstrate a powerline based ESP32 Smart Home system.
 
@@ -42,7 +42,7 @@ To build and run this project on your ESP32-S3, follow these steps:
     ```
    This will display the serial output of your ESP32-S3.
 
-Your ESP32-S3 will start as a Wi-Fi station, create a socket server, and listen for incoming connections.
+The ESP32-S3 will start as a Wi-Fi station, create a socket server, and listen for incoming connections.
 
 ## Customization
 
