@@ -14,5 +14,6 @@ idf_component_register(SRCS "main.c"
                         esp_event 
                         nvs_flash 
                         wifi
+                        bme280
                         driver)
 

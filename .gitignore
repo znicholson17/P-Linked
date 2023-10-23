@@ -1,2 +1,4 @@
 /hub/build
 /hub/.cache
+/nodes/thermostat/build
+/nodes/thermostat/.cache

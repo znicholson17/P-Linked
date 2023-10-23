@@ -59,7 +59,4 @@ This project is based on the ESP-IDF framework and follows best practices recomm
 
 ## Author
 
-- [Your Name](https://github.com/yourusername)
-
-Feel free to provide more details, documentation, and customization options as needed. This `README.md` template serves as a starting point for your ESP32 project's documentation.
-
+- [Zachary Nicholson](https://github.com/znicholson17)
