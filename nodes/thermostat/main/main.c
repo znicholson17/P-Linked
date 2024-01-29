@@ -21,8 +21,8 @@
 #define I2C_MASTER_ACK 0
 #define I2C_MASTER_NACK 1
 
-static const char *SERVER_IP = "10.0.0.35";
-static const int SERVER_PORT = 1337;
+static const char *SERVER_IP = "192.168.1.141";
+static const int SERVER_PORT = 12345;
 
 void i2c_master_init()
 {

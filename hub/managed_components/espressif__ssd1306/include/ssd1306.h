@@ -26,7 +26,7 @@ extern "C"
 #define SSD1306_I2C_ADDRESS    ((uint8_t)0x3C)
 
 #define SSD1306_WIDTH               128
-#define SSD1306_HEIGHT              32
+#define SSD1306_HEIGHT              64
 
 typedef void *ssd1306_handle_t;                         /*handle of ssd1306*/
 

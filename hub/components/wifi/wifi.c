@@ -33,8 +33,8 @@ static const char *TAG_AP = "WIFI SoftAP";
 #define SoftAP_SSID "ESP_Wifi"
 #define SoftAP_PWORD "password"
 static const char *TAG_STA = "WIFI STA";
-#define STA_SSID "HZ AX"
-#define STA_PWORD "ZachHillary66103"
+#define STA_SSID "IEEE at UCI"
+#define STA_PWORD "politespider482"
 #define EXAMPLE_ESP_MAXIMUM_RETRY 50
 
 
