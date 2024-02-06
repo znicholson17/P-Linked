@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ESP32-S3-WROOM-1-N16R2")(type "KiCad")(uri "C:/Users/Theo/Desktop/ESP32-S3-WROOM-1-N16R2/ESP32-S3-WROOM-1-N16R2.kicad_sym")(options "")(descr ""))
+  (lib (name "CP2102N-A02-GQFN28")(type "KiCad")(uri "${KIPRJMOD}/CP2102N-A02-GQFN28.kicad_sym")(options "")(descr ""))
+  (lib (name "Proj_library")(type "KiCad")(uri "${KIPRJMOD}/Proj_library.kicad_sym")(options "")(descr ""))
+)
