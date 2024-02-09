@@ -39,11 +39,7 @@ set(EXTRA_COMPONENT_DIRS
     "${MATTER_SDK_PATH}/config/esp32/components"
     "${ESP_MATTER_PATH}/components"
     "${ESP_MATTER_PATH}/device_hal/device"
-    ${extra_components_dirs_append}
-    )
-
-
-list(APPEND EXTRA_COMPONENT_DIRS )
+    ${extra_components_dirs_append})
 
 project(light)
 

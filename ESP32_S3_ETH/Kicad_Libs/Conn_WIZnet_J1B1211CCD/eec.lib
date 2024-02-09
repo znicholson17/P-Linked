@@ -1,0 +1,79 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# WIZnet J1B1211CCD
+#
+DEF J1B1211CCD J 0 0 Y Y 1 L N
+F0 "J" 0 300 50 H V L CNN 
+F1 "J1B1211CCD" 0 400 50 H V L CNN 
+F2 "WIZnet-J1B1211CCD-*" 0 500 50 H I L CNN 
+F3 "http://wizwiki.net/wiki/lib/exe/fetch.php?media=products:wiz550web:wiz550webds_kr:j1b1211ccd.pdf" 0 600 50 H I L CNN 
+F4 "No" 0 700 50 H I L CNN "automotive"
+F5 "Conn" 0 800 50 H I L CNN "category"
+F6 "Gold,Nickel" 0 900 50 H I L CNN "contact material"
+F7 "Connectors" 0 1000 50 H I L CNN "device class L1"
+F8 "Modular / Ethernet Connectors" 0 1100 50 H I L CNN "device class L2"
+F9 "unset" 0 1200 50 H I L CNN "device class L3"
+F10 "CONN JACK 1PORT 100 BASE-T PCB" 0 1300 50 H I L CNN "digikey description"
+F11 "1278-1052-ND" 0 1400 50 H I L CNN "digikey part number"
+F12 "yes" 0 1500 50 H I L CNN "is connector"
+F13 "yes" 0 1600 50 H I L CNN "is female"
+F14 "Yes" 0 1700 50 H I L CNN "lead free"
+F15 "17ec178dff3015c7" 0 1800 50 H I L CNN "library id"
+F16 "WIZnet" 0 1900 50 H I L CNN "manufacturer"
+F17 "950-J1B1211CCD" 0 2000 50 H I L CNN "mouser part number"
+F18 "8" 0 2100 50 H I L CNN "number of contacts"
+F19 "CONN_ETHERNET_RJ45" 0 2200 50 H I L CNN "package"
+F20 "1.27mm" 0 2300 50 H I L CNN "pitch"
+F21 "Yes" 0 2400 50 H I L CNN "rohs"
+F22 "true" 0 2500 50 H I L CNN "shielding"
+F23 "+85°C" 0 2600 50 H I L CNN "temperature range high"
+F24 "-40°C" 0 2700 50 H I L CNN "temperature range low"
+DRAW
+X 1 1 -100 0 100 L 40 40 1 1 P 
+X 2 2 -100 -200 100 L 40 40 1 1 P 
+X 3 3 -100 -400 100 L 40 40 1 1 P 
+X 4 4 -100 -600 100 L 40 40 1 1 P 
+X 5 5 -100 -800 100 L 40 40 1 1 P 
+X 6 6 -100 -1000 100 L 40 40 1 1 P 
+X 7 7 -100 -1200 100 L 40 40 1 1 P 
+X 8 8 -100 -1400 100 L 40 40 1 1 P 
+X CATHODE_GREEN 9 -100 -1600 100 L 40 40 1 1 P 
+X ANODE_GREEN 10 -100 -1800 100 L 40 40 1 1 P 
+X CATHODE_YELLOW 11 -100 -2000 100 L 40 40 1 1 P 
+X ANODE_YELLOW 12 -100 -2200 100 L 40 40 1 1 P 
+X MNT_1 13 -100 -2400 100 L 40 40 1 1 P 
+X MNT_2 14 -100 -2600 100 L 40 40 1 1 P 
+S -1300 200 -200 -2800 1 1 0 f
+C -750 0 30 1 1 0 N
+P 2 1 1 0 -720 0 -200 0 N
+C -750 -200 30 1 1 0 N
+P 2 1 1 0 -720 -200 -200 -200 N
+C -750 -400 30 1 1 0 N
+P 2 1 1 0 -720 -400 -200 -400 N
+C -750 -600 30 1 1 0 N
+P 2 1 1 0 -720 -600 -200 -600 N
+C -750 -800 30 1 1 0 N
+P 2 1 1 0 -720 -800 -200 -800 N
+C -750 -1000 30 1 1 0 N
+P 2 1 1 0 -720 -1000 -200 -1000 N
+C -750 -1200 30 1 1 0 N
+P 2 1 1 0 -720 -1200 -200 -1200 N
+C -750 -1400 30 1 1 0 N
+P 2 1 1 0 -720 -1400 -200 -1400 N
+C -750 -1600 30 1 1 0 N
+P 2 1 1 0 -720 -1600 -200 -1600 N
+C -750 -1800 30 1 1 0 N
+P 2 1 1 0 -720 -1800 -200 -1800 N
+C -750 -2000 30 1 1 0 N
+P 2 1 1 0 -720 -2000 -200 -2000 N
+C -750 -2200 30 1 1 0 N
+P 2 1 1 0 -720 -2200 -200 -2200 N
+C -750 -2400 30 1 1 0 N
+P 2 1 1 0 -720 -2400 -200 -2400 N
+C -750 -2600 30 1 1 0 N
+P 2 1 1 0 -720 -2600 -200 -2600 N
+ENDDRAW
+ENDDEF
+#
+# End Library

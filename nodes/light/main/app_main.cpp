@@ -10,7 +10,6 @@
 #include <esp_log.h>
 #include <nvs_flash.h>
 
-
 #include <esp_matter.h>
 #include <esp_matter_console.h>
 #include <esp_matter_ota.h>
@@ -107,6 +106,11 @@ static void app_event_cb(const ChipDeviceEvent *event, intptr_t arg)
     case chip::DeviceLayer::DeviceEventType::kFabricCommitted:
         ESP_LOGI(TAG, "Fabric is committed");
         break;
+
+    case chip::DeviceLayer::DeviceEventType::kBLEDeinitialized:
+        ESP_LOGI(TAG, "BLE deinitialized and memory reclaimed");
+        break;
+
     default:
         break;
     }
@@ -146,7 +150,6 @@ extern "C" void app_main()
     nvs_flash_init();
 
     /* Initialize driver */
-
     app_driver_handle_t light_handle = app_driver_light_init();
     app_driver_handle_t button_handle = app_driver_button_init();
     app_reset_button_register(button_handle);
@@ -160,8 +163,8 @@ extern "C" void app_main()
     light_config.on_off.lighting.start_up_on_off = nullptr;
     light_config.level_control.current_level = DEFAULT_BRIGHTNESS;
     light_config.level_control.lighting.start_up_current_level = DEFAULT_BRIGHTNESS;
-    light_config.color_control.color_mode = EMBER_ZCL_COLOR_MODE_COLOR_TEMPERATURE;
-    light_config.color_control.enhanced_color_mode = EMBER_ZCL_ENHANCED_COLOR_MODE_COLOR_TEMPERATURE;
+    light_config.color_control.color_mode = (uint8_t)ColorControl::ColorMode::kColorTemperature;
+    light_config.color_control.enhanced_color_mode = (uint8_t)ColorControl::ColorMode::kColorTemperature;
     light_config.color_control.color_temperature.startup_color_temperature_mireds = nullptr;
     endpoint_t *endpoint = extended_color_light::create(node, &light_config, ENDPOINT_FLAG_NONE, light_handle);
 
@@ -172,6 +175,19 @@ extern "C" void app_main()
 
     light_endpoint_id = endpoint::get_id(endpoint);
     ESP_LOGI(TAG, "Light created with endpoint_id %d", light_endpoint_id);
+
+    /* Mark deferred persistence for some attributes that might be changed rapidly */
+    cluster_t *level_control_cluster = cluster::get(endpoint, LevelControl::Id);
+    attribute_t *current_level_attribute = attribute::get(level_control_cluster, LevelControl::Attributes::CurrentLevel::Id);
+    attribute::set_deferred_persistence(current_level_attribute);
+
+    cluster_t *color_control_cluster = cluster::get(endpoint, ColorControl::Id);
+    attribute_t *current_x_attribute = attribute::get(color_control_cluster, ColorControl::Attributes::CurrentX::Id);
+    attribute::set_deferred_persistence(current_x_attribute);
+    attribute_t *current_y_attribute = attribute::get(color_control_cluster, ColorControl::Attributes::CurrentY::Id);
+    attribute::set_deferred_persistence(current_y_attribute);
+    attribute_t *color_temp_attribute = attribute::get(color_control_cluster, ColorControl::Attributes::ColorTemperatureMireds::Id);
+    attribute::set_deferred_persistence(color_temp_attribute);
 
 #if CHIP_DEVICE_CONFIG_ENABLE_THREAD
     /* Set OpenThread platform config */
@@ -202,6 +218,9 @@ extern "C" void app_main()
 #if CONFIG_ENABLE_CHIP_SHELL
     esp_matter::console::diagnostics_register_commands();
     esp_matter::console::wifi_register_commands();
+#if CONFIG_OPENTHREAD_CLI
+    esp_matter::console::otcli_register_commands();
+#endif
     esp_matter::console::init();
 #endif
 }
