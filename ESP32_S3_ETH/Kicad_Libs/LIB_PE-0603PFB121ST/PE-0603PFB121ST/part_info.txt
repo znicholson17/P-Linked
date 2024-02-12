@@ -1,0 +1,9 @@
+Manufacturer=Pulse Electronics
+PartNumber=PE-0603PFB121ST
+PartCategory=Ferrite Bead
+PackageCategory=Ferrite Bead Chip
+PinCount=2
+Version=1.1
+Released=2022-01-12 12:41:01
+Downloaded=2024-02-12 02:40:47
+3D=Y

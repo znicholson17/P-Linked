@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'PE_0603PFB121ST'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Pulse Electronics", "PE-0603PFB121ST" (!) = "", "BEADC1608X95N", "Ferrite Bead Chip", "673-PE-0603PFB121ST", "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PE-0603PFB121ST?qs=mXcQpiKXIAzgd58UAlJe4A%3D%3D", "PE-0603PFB121ST", "https://www.arrow.com/en/products/pe-0603pfb121st/pulse-electronics-corporation?region=nac", "Ferrite Beads 0603 120Ohms SMT FERRITE CHIP BEAD", "https://www.arrow.com/en/products/pe-0603pfb121st/pulse-electronics-corporation?region=nac", "0.95 mm"
+END_PART
+
+END.

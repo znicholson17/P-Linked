@@ -9,4 +9,7 @@
   (lib (name "1N5819HW-7-F")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/1N5819HW-7-F")(options "")(descr ""))
   (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/ul_TC1264-3-3VDB/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "eec")(type "KiCad")(uri "${KIPRJMOD}Kicad_Libs/Conn_WIZnet_J1B1211CCD/eec.pretty")(options "")(descr ""))
+  (lib (name "KiCad")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/LIB_TC1264-3.3VDB/TC1264-3.3VDB/KiCad")(options "")(descr ""))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/espressif-kicad-addon/footprints/Espressif.pretty")(options "")(descr ""))
+  (lib (name "fb")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/LIB_PE-0603PFB121ST/PE-0603PFB121ST/KiCad")(options "")(descr ""))
 )

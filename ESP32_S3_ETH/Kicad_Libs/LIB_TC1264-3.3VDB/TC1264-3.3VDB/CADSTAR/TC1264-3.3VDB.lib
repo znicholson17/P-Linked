@@ -1,0 +1,18 @@
+.TC1264-3.3VDB :1 ;LDO Regulator Pos 3.3V 0.8A Automotive 4-Pin(3+Tab) SOT-223 Tube
+SOT230P700X180-4N
+*STM IC
+*NGS
+*PLB 1="VIN" 2="GND_1" 3="VOUT" 4="GND_2"
+*MXP 4
+*DFN TC1264-3.3VDB
+~!Manufacturer_Name (Microchip)
+~!Manufacturer_Part_Number (TC1264-3.3VDB)
+~!Mouser Part Number (579-TC1264-3.3VDB)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Microchip-Technology/TC1264-3.3VDB?qs=AkCjCAp%252BzjQSxS5e2ugTcA%3D%3D)
+~!Arrow Part Number (TC1264-3.3VDB)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/tc1264-3.3vdb/microchip-technology?region=nac)
+~!Link Datasheet (http://ww1.microchip.com/downloads/en/devicedoc/21375d.pdf)
+~!Height (1.8mm)
+~!3D_Model (TC1264-3.3VDB)
+TC1264-3.3VDB
+1.1!U 2.1!U 3.1!U 4.1!U 

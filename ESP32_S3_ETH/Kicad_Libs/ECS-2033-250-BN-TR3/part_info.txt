@@ -1,0 +1,9 @@
+Manufacturer=ECS
+PartNumber=ECS-2033-250-BN-TR3
+PartCategory=Crystal or Oscillator
+PackageCategory=Other
+PinCount=4
+Version=1.2
+Released=2022-02-25 11:52:23
+Downloaded=2024-02-12 02:25:36
+3D=Y

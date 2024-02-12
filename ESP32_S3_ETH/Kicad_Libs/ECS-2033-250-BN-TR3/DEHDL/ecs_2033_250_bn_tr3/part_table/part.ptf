@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ECS_2033_250_BN_TR3'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "ECS", "ECS-2033-250-BN-TR3" (!) = "", "ECS2033250BNTR3", "Other", "520-ECS-2033250BNTR3", "https://www.mouser.co.uk/ProductDetail/ECS/ECS-2033-250-BN-TR3?qs=XAiT9M5g4x%252BKrERttTD0%2FA%3D%3D", "", "", "Standard Clock Oscillators 25.00MHz, 3.3V, 2.5x2.0mm SMD OSC, +/-50PPM, -40C to +85C", "https://www.mouser.sg/datasheet/2/122/ecs_2025_2033-2584417.pdf", "1 mm"
+END_PART
+
+END.

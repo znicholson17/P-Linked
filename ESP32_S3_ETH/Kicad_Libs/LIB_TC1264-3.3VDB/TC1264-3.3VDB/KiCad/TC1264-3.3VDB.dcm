@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TC1264-3.3VDB
+D LDO Regulator Pos 3.3V 0.8A Automotive 4-Pin(3+Tab) SOT-223 Tube
+K
+F http://ww1.microchip.com/downloads/en/devicedoc/21375d.pdf
+$ENDCMP
+#
+#End Doc Library

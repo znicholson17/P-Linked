@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ECS-2033-250-BN-TR3
+D Standard Clock Oscillators 25.00MHz, 3.3V, 2.5x2.0mm SMD OSC, +/-50PPM, -40C to +85C
+K
+F https://www.mouser.sg/datasheet/2/122/ecs_2025_2033-2584417.pdf
+$ENDCMP
+#
+#End Doc Library

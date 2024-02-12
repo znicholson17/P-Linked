@@ -1,0 +1,18 @@
+.PE-0603PFB121ST :1 ;Ferrite Beads 0603 120Ohms SMT FERRITE CHIP BEAD
+BEADC1608X95N
+*STM FB
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN PE-0603PFB121ST
+~!Manufacturer_Name (Pulse Electronics)
+~!Manufacturer_Part_Number (PE-0603PFB121ST)
+~!Mouser Part Number (673-PE-0603PFB121ST)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PE-0603PFB121ST?qs=mXcQpiKXIAzgd58UAlJe4A%3D%3D)
+~!Arrow Part Number (PE-0603PFB121ST)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/pe-0603pfb121st/pulse-electronics-corporation?region=nac)
+~!Link Datasheet (https://www.arrow.com/en/products/pe-0603pfb121st/pulse-electronics-corporation?region=nac)
+~!Height (0.95mm)
+~!3D_Model (PE-0603PFB121ST)
+PE-0603PFB121ST
+1.1!U 2.1!U 

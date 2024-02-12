@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "PE-0603PFB121ST"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2022-01-12-12:41:01)
+    (mountForm default
+        (footprintRef "BEADC1608X95N")
+        (spec "System")
+    )
+)

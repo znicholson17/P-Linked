@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TC1264_3.3VDB'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Microchip", "TC1264-3.3VDB" (!) = "", "SOT230P700X180-4N", "SOT223 (3-Pin)", "579-TC1264-3.3VDB", "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/TC1264-3.3VDB?qs=AkCjCAp%252BzjQSxS5e2ugTcA%3D%3D", "TC1264-3.3VDB", "https://www.arrow.com/en/products/tc1264-3.3vdb/microchip-technology?region=nac", "LDO Regulator Pos 3.3V 0.8A Automotive 4-Pin(3+Tab) SOT-223 Tube", "http://ww1.microchip.com/downloads/en/devicedoc/21375d.pdf", "1.8 mm"
+END_PART
+
+END.
