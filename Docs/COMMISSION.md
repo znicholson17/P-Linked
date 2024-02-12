@@ -103,11 +103,7 @@ The bin file, manual pairing code, and generated QR Code will be located in the 
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
+![stuff](https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/Bin_File_Demo.png)
 
 ## Flashing Bin file onto ESP32S3
 
@@ -134,10 +130,7 @@ Afterwards: this is what it should look like:
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+![Example ESPTOOL Flash](https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/esptool_flash.png)
 
 
 
@@ -195,10 +188,7 @@ Ex:
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+![Generated QR Demo](https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/Generate_setup_payload.png)
 
 
 Manualcode : 23684728836
@@ -217,12 +207,7 @@ https://project-chip.github.io/connectedhomeip/qrcode.html?data={INSERT QR CODE 
 This prints out QR code for the code MT:634J0EP114-UZ05Z.00:
 
 
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
+![QR Code Link](https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/demo_QR_Code.png)
 
 
 ## Appendix
