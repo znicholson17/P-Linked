@@ -134,9 +134,6 @@ Afterwards: this is what it should look like:
 
 
 
-## 
-
-
 ## Generating QR Code
 
 To generate a QR Code, go to: 
