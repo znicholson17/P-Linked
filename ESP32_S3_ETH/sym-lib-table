@@ -5,7 +5,7 @@
   (lib (name "CP2102N-A02-GQFN28")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/CP2102N-A02-GQFN28/CP2102N-A02-GQFN28.kicad_sym")(options "")(descr ""))
   (lib (name "SS8050-G")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/SS8050-G/SS8050-G.kicad_sym")(options "")(descr ""))
   (lib (name "W5500")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/W5500/W5500.kicad_sym")(options "")(descr ""))
-  (lib (name "eec")(type "Legacy")(uri "${KIPRJMOD}/Kicad_Libs/Conn_WIZnet_J1B1211CCD/eec.lib")(options "")(descr ""))
+  (lib (name "eec")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/Conn_WIZnet_J1B1211CCD/eec.kicad_sym")(options "")(descr ""))
   (lib (name "BK0603LL121-T")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/BK0603LL121-T/BK0603LL121-T.kicad_sym")(options "")(descr ""))
   (lib (name "ECS-2033-250-BN-TR3")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/ECS-2033-250-BN-TR3/ECS-2033-250-BN-TR3.kicad_sym")(options "")(descr ""))
   (lib (name "TC1264-3_3VDB")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/LIB_TC1264-3.3VDB/TC1264-3.3VDB/KiCad/TC1264-3_3VDB.kicad_sym")(options "")(descr ""))

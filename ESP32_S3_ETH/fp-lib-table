@@ -12,4 +12,5 @@
   (lib (name "KiCad")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/LIB_TC1264-3.3VDB/TC1264-3.3VDB/KiCad")(options "")(descr ""))
   (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/espressif-kicad-addon/footprints/Espressif.pretty")(options "")(descr ""))
   (lib (name "fb")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/LIB_PE-0603PFB121ST/PE-0603PFB121ST/KiCad")(options "")(descr ""))
+  (lib (name "mmss8050")(type "KiCad")(uri "${KIPRJMOD}/Kicad_Libs/MMSS8050_L_TP/KiCADv6/footprints.pretty")(options "")(descr ""))
 )
