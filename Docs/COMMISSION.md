@@ -18,7 +18,8 @@ Follow the steps stated [here](https://docs.espressif.com/projects/esp-matter/en
 
 <span style="text-decoration:underline;">When flashing ESP32S3 for the first time, please run the following code:</span>
 
-`idf.py erase-flash`
+```bash
+idf.py erase-flash```
 
 
 ## Commissioning Matter Device(s) to Home Assistant
