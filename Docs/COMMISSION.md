@@ -1,4 +1,4 @@
-Last Updated by Theo Tang on 2/9/2024
+Last Updated by [Theodore Tang](https://github.com/leunknown) on 2/9/2024
 
 
 ## Prerequisite
