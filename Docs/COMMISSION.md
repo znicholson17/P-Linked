@@ -19,8 +19,8 @@ Follow the steps stated [here](https://docs.espressif.com/projects/esp-matter/en
 <span style="text-decoration:underline;">When flashing ESP32S3 for the first time, please run the following code:</span>
 
 ```bash
-idf.py erase-flash```
-
+idf.py erase-flash
+```
 
 ## Commissioning Matter Device(s) to Home Assistant
 
@@ -48,7 +48,9 @@ Once entered, follow the remaining instructions on your mobile device.
 
 To find the program that does bin file generation, go to /{ESP-MATTER PATH}/tools/mfg_tool and run the program: 
 
-`./mfg_tool.py`
+```bash
+./mfg_tool.py
+```
 
 This tool generates both the QR code and manual pairing codes. **There is no need to generate QR code or manual pairing code** unless you are only given the discriminator, passcode, Vendor ID, and Product ID. You are also able to generate multiple commission files at once.
 
@@ -85,7 +87,9 @@ To see other commands:
 
 * Please note the file as to be pai
 
-`./mfg_tool.py -cn "Device Name" -v 0xFFF1 -p 0x8000 -dm 2 --pai -k /PATH/TO/MATTER/esp-matter/connectedhomeip/connectedhomeip/credentials/test/attestation/Chip-Test-PAI-FFF1-8000-Key.pem -c /PATH/TO/MATTER/esp-matter/connectedhomeip/connectedhomeip/credentials/test/attestation/Chip-Test-PAI-FFF1-8000-Cert.pem -cd /PATH/TO/MATTER/esp-matter/connectedhomeip/connectedhomeip/credentials/test/attestation/Chip-Test-PAI-FFF1-8000-Cert.der`
+```bash
+./mfg_tool.py -cn "Device Name" -v 0xFFF1 -p 0x8000 -dm 2 --pai -k /PATH/TO/MATTER/esp-matter/connectedhomeip/connectedhomeip/credentials/test/attestation/Chip-Test-PAI-FFF1-8000-Key.pem -c /PATH/TO/MATTER/esp-matter/connectedhomeip/connectedhomeip/credentials/test/attestation/Chip-Test-PAI-FFF1-8000-Cert.pem -cd /PATH/TO/MATTER/esp-matter/connectedhomeip/connectedhomeip/credentials/test/attestation/Chip-Test-PAI-FFF1-8000-Cert.der
+```
 
 With this example, it chooses a random discriminator and passcode for the generated bin file and outputs it in its own folder.
 
@@ -94,7 +98,9 @@ With this example, it chooses a random discriminator and passcode for the genera
 
 Output will be under:
 
-`/{ESP-MATTER PATH}/tools/mfg_tool/out`
+```bash
+/{ESP-MATTER PATH}/tools/mfg_tool/out
+```
 
 The folder name will be dependent on Vendor ID and Product ID, naming would be the hex number of those two combined.
 
@@ -110,7 +116,10 @@ The bin file, manual pairing code, and generated QR Code will be located in the 
 
 After generating the bin file, to flash the file onto the ESP32.
 
-Run: `./esptool.py` 
+Run: 
+```bash
+./esptool.py
+``` 
 
 Commands:
 
@@ -125,7 +134,9 @@ The example command is to flash data onto the ota_data (over the air) section of
 
 `./esptool.py write_flash 0x1000 {path to bin file}`
 
-`./esptool.py write_flash 0x10000 /PATH/TO/MATTER/esp-matter/tools/mfg_tool/out/fff1_8000/848358cf-1f9e-4c2a-9ebc-b021db4fe434/848358cf-1f9e-4c2a-9ebc-b021db4fe434-partition.bin`
+```bash
+./esptool.py write_flash 0x10000 /PATH/TO/MATTER/esp-matter/tools/mfg_tool/out/fff1_8000/848358cf-1f9e-4c2a-9ebc-b021db4fe434/848358cf-1f9e-4c2a-9ebc-b021db4fe434-partition.bin
+```
 
 Afterwards: this is what it should look like:
 
@@ -141,7 +152,10 @@ To generate a QR Code, go to:
 
 /{CONNECTHOMEIP PATH}/src/setup_payload/python
 
-Run `./generate_setup_payload.py`
+Run:
+```bash
+./generate_setup_payload.py
+```
 
 Commands:
 
@@ -168,7 +182,9 @@ Commands 2-6 must be stated. We will be using -cf 0 and -dm 1
 
 ### Example Generating Script
 
-`./generate_setup_payload.py -d 0x0AA4 -vid 0xFFF2 -pid 0x8001 -cf 0 -dm 1 -p 47239151`
+```bash
+./generate_setup_payload.py -d 0x0AA4 -vid 0xFFF2 -pid 0x8001 -cf 0 -dm 1 -p 47239151
+```
 
 
 ### 
@@ -215,7 +231,9 @@ This prints out QR code for the code MT:634J0EP114-UZ05Z.00:
 
 If this error occurs on idf.py monitor, erase flash memory by running:
 
-`./idf.py erase-flash`
+```bash
+./idf.py erase-flash
+```
 
 
 #### ESP32 is bootlooping
