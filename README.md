@@ -60,3 +60,4 @@ This project is based on the ESP-IDF framework and follows best practices recomm
 ## Author
 
 - [Zachary Nicholson](https://github.com/znicholson17)
+- [Theodore Tang](https://github.com/leunknown)
