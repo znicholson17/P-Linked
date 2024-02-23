@@ -43,15 +43,20 @@ cd esp-idf; source ./export.sh; cd ..
 cd esp-matter; source ./export.sh; cd ..
 ```
 
-###Enable Ccache for faster IDF builds.
+### Enable Ccache for faster IDF builds.
 Ccache is a compiler cache. Matter builds are very slow and takes a lot of time. Ccache caches the previous compilations and speeds up recompilation in subsequent builds.
 ```bash
 export IDF_CCACHE_ENABLE=1
 ```
 
-##Flashing Firmware
+## Flashing Firmware
 Choose IDF target
 ```bash
 idf.py set-target esp32s3
 ```
-If idf.py cannot be found, please go to an example to build.
+If idf.py cannot be found, please go to an example applcation to build.
+
+Examples can be found in: 
+```bash
+/PATH/TO/MATTER/esp-matter/examples
+```
