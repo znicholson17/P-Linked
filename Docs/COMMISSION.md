@@ -59,20 +59,20 @@ This tool generates both the QR code and manual pairing codes. **There is no nee
 
 
 1. -cn
-    1. Common name prefix of subject of PAI cert
+   - Common name prefix of subject of PAI cert
 2. -v
-    2. Vendor ID, usually hex code identifying manufacturer of device.
+   - Vendor ID, usually hex code identifying manufacturer of device.
 3. --pai
-    3. Input certificate as PAI certificate
+   - Input certificate as PAI certificate
 4. -k
-    4. Input key file
+   - Input key file
 5. -c
-    5. Certification file (usually link to it)
+   - Certification file (usually link to it)
 6. -cd
-    6. Certification declaration file
+   - Certification declaration file
 7. -dm 
-    7. Discovery mode: 0:WiFi-SoftAP, 1:BLE, 2:On-network.
-    8. Default is BLE, but set to mode to be On-network
+   - Discovery mode: 0:WiFi-SoftAP, 1:BLE, 2:On-network.
+   - Default is BLE, but set to mode to be On-network
 
 To see other commands:
 
@@ -162,20 +162,20 @@ Commands:
 
 
 1. -h
-    1. Lists commands to use
+    - Lists commands to use
 2. -d DISCRIMINATOR
-    2. Write discriminator for pairing, range: 0x00-0x0FFF 
+    - write discriminator for pairing, range: 0x00-0x0FFF 
 3. -vid VENDOR_ID
-    3. Vendor ID
+    - Vendor ID
 4. -pid PRODUCT_ID
-    4. Product ID
+    - Product ID
 5. -cf
-    5. Commissioning flow: 0: Standard, 1: User-Intent, 2: Custom Default: 0
+    - Commissioning flow: 0: Standard, 1: User-Intent, 2: Custom Default: 0
 6. -dm
-    6. Commissionable device discovery
-    7. 0: SoftAP 1: BLE, 2: OnNetwork. Default: OnNetwork
+       - Commissionable device discovery
+       - 0: SoftAP 1: BLE, 2: OnNetwork. Default: OnNetwork
 7. -p
-    8. Passcode
+   - Passcode
 
 Commands 2-6 must be stated. We will be using -cf 0 and -dm 1
 
