@@ -3,6 +3,15 @@ This is an ESP32 project that will demonstrate a powerline based ESP32 Smart Hom
 
 ## Overview
 Plug-and-play smart home integration to connect and control IoT devices over powerline and Matter standard.
+The project consists of two parts:
+1. Hardware
+2. Software
+
+## Hardware
+For the hardware, we have created a PCB based on a ESP32-S3 with built in ethernet jack (RJ45). This PCB serves as hardware attached on top of the WisLink LX200V20 EVB boards.
+
+## Software
+For software, we have coding in C
 
 ## Project Structure
 The project follows the recommended project structure for ESP32 applications:
