@@ -8,10 +8,13 @@ The project consists of two parts:
 2. Software
 
 ## Hardware
-For the hardware, we have created a PCB based on a ESP32-S3 with built in ethernet jack (RJ45). This PCB serves as hardware attached on top of the WisLink LX200V20 EVB boards.
+For the hardware, we have created a PCB based on a ESP32-S3 with built in ethernet jack (RJ45). This PCB serves as hardware attached on top of the WisLink LX200V20 EVB boards. In the future, we plan on adapting the powerline module onto the PCB as well.
 
 ## Software
-For software, we have coding in C
+For software, we code in C/C++, we use [esp-idf](https://docs.espressif.com/projects/esp-idf/en/v5.2/esp32s3/get-started/index.html)
+and [esp-matter](https://docs.espressif.com/projects/esp-matter/en/latest/esp32s3/developing.html#),
+setup can be found in [INSTALL.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/INSTALL.md).   
+The prefered operating system is [Ubuntu 20.04 LTS](https://ubuntu.com/download/desktop) or later.
 
 ## Project Structure
 The project follows the recommended project structure for ESP32 applications:
@@ -22,9 +25,10 @@ The project follows the recommended project structure for ESP32 applications:
 
 ## Getting Started
 To get started, first go to [Docs](https://github.com/znicholson17/P-Linked/tree/main/Docs) folder and read the [INSTALL.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/INSTALL.md).
-From there, build your applications using BUILD.md and commission using COMMISSION.md
+From there, build your applications using BUILD.md and commission using COMMISSION.md  
 
 
+Last Updated on 2/24/2024
 ### Authors
 
 - [Zachary Nicholson](https://github.com/znicholson17)
