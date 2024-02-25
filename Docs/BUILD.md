@@ -15,7 +15,7 @@ To set up the idf.py menuconfig, first go to the application examples, which is 
 `/PATH/TO/MATTER/esp-matter/examples`.
 Then run:
 ```bash
-cd<your_app>
+cd <your_app>
 idf.py menuconfig
 ```
 In the configuration menu, set the following additional configuration to use custom factory partition and different values for Data and Device Info Providers.
@@ -32,6 +32,27 @@ In the configuration menu, set the following additional configuration to use cus
 5. Change the **`Network Telemetry Option`** to **`Enable Ethernet Telemetry`** and disable any other telemetries (ie: WiFi, Thread, Full Thread, etc) in [Component config → CHIP Device Layer → Network Telemetry Options → Enable Ethernet Telemetry
    > Change to Ethernet Telemetry to be able to use ethernet and  OnNetwork for comissioning.
 
+## Building application
+To build the application, first make sure to select the correct IDF target.
+```bash
+idf.py set-target esp32s3
+```
+Afterwards, make run the following command to build the application for the ESP32.
+```bash
+idf.py build
+```
+Once built, run this application to flash the firmware.
+```bash
+idf.py flash
+```
+
+Some other helpful **`idf.py`** commands:
+- erase-flash
+   - Erases entire flash chip
+- monitor
+  - Display serial output
+- menuconfig
+  - Runs "menuconfig" project configuration tool.
 
 ### Author
 - [Theodore Tang]([github.com/leunknown](https://github.com/leunknown)https://github.com/leunknown)
