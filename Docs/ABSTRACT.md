@@ -10,6 +10,11 @@ The project consists of two parts:
 ## Hardware
 For the hardware, we have created a PCB based on a ESP32-S3 with built in ethernet jack (RJ45). This PCB serves as hardware attached on top of the WisLink LX200V20 EVB boards. In the future, we plan on adapting the powerline module onto the PCB as well.
 
+- Raspberry Pi 4
+- ESP32-S3 
+- WisLink LX200V20 EVB
+- Custom ESP32S3 Ethernet PCB
+
 ## Software
 For software, we code in C/C++, we use [esp-idf](https://docs.espressif.com/projects/esp-idf/en/v5.2/esp32s3/get-started/index.html)
 and [esp-matter](https://docs.espressif.com/projects/esp-matter/en/latest/esp32s3/developing.html#),
