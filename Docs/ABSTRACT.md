@@ -1,15 +1,19 @@
 # Senior Design Capstone Project
 This is an ESP32 project that will demonstrate a powerline based ESP32 Smart Home system.
 
+## Diagram of P-LINKED network
+
+<img src = "https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/P-LINKED_DIAGRAM.png" width="400" hiehgt="400">
+The diagram shown above describes how nodes and hub communicate with each other. For hub and nodes, the devices are connected to an electrical outlet using a powerline transciever. 
+From there, each device communicates over powerline.   
+
+Each device is limited to 200Mbps and 300 meters of range for IP access.
+
 ## Overview
 Plug-and-play smart home integration to connect and control IoT devices over powerline and Matter standard.
 The project consists of two parts:
 1. Hardware
 2. Software
-
-   
-<img src = "https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/P-LINKED_DIAGRAM.png" width="400" hiehgt="400">
-
 
 ## Hardware
 For the hardware, we have created a PCB based on a ESP32-S3 with built in ethernet jack (RJ45). This PCB serves as hardware attached on top of the WisLink LX200V20 EVB boards. In the future, we plan on adapting the powerline module onto the PCB as well.
@@ -25,6 +29,7 @@ and [esp-matter](https://docs.espressif.com/projects/esp-matter/en/latest/esp32s
 setup can be found in [INSTALL.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/INSTALL.md).   
 The prefered operating system is [Ubuntu 20.04 LTS](https://ubuntu.com/download/desktop) or later.
 
+
 ## Project Structure
 The project follows the recommended project structure for ESP32 applications:
 - `hub/`: This folder serves as the guide for setup of a Matter hub.
@@ -34,10 +39,10 @@ The project follows the recommended project structure for ESP32 applications:
 
 ## Getting Started
 To get started, first go to [Docs](https://github.com/znicholson17/P-Linked/tree/main/Docs) folder and read the [INSTALL.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/INSTALL.md).
-From there, build your applications using BUILD.md and commission using COMMISSION.md  
+From there, build your applications using [BUILD.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/BUILD.md) and commission using [COMMISSION.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/COMMISSION.md)  
 
 
-Last Updated on 2/24/2024
+Last Updated on 2/26/2024
 ### Authors
 
 - [Zachary Nicholson](https://github.com/znicholson17)
