@@ -7,6 +7,10 @@ The project consists of two parts:
 1. Hardware
 2. Software
 
+   
+<img src = "https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/P-LINKED_DIAGRAM.png" width="400" hiehgt="400">
+
+
 ## Hardware
 For the hardware, we have created a PCB based on a ESP32-S3 with built in ethernet jack (RJ45). This PCB serves as hardware attached on top of the WisLink LX200V20 EVB boards. In the future, we plan on adapting the powerline module onto the PCB as well.
 
