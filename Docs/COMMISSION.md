@@ -8,7 +8,6 @@ Last Updated by [Theodore Tang](https://github.com/leunknown) on 2/9/2024
 * Ubuntu 20.04 LTS or higher
 * [esp-matter](https://github.com/espressif/esp-matter)
 * [esp-idf](https://github.com/espressif/esp-idf) (V5.1)
-* [ConnectHomeIP (CHIP)](https://github.com/project-chip/connectedhomeip)
 * Be on a 2.4 Ghz Wifi network
 
 Follow the steps stated [here](https://docs.espressif.com/projects/esp-matter/en/latest/esp32/developing.html) to install.
