@@ -43,4 +43,4 @@ The first image shows the overall layout of the PCB with fills hidden and for ea
 - Increased Connction speeds
 - Powered Over Ethernet
 - Configerable MAC Address
-- Built-in Header Pins
+- Built-in Header Pins for plug-and-play device board stack
