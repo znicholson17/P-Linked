@@ -7,7 +7,7 @@ This is an ESP32 project that will demonstrate a powerline based ESP32 Smart Hom
 The diagram shown above describes how nodes and hub communicate with each other. For hub and nodes, the devices are connected to an electrical outlet using a powerline transciever. 
 From there, each device communicates over powerline.   
 
-Each device is limited to 200Mbps and 300 meters of range for IP access.
+Each device is limited to a theoretical speed of up to 200Mbps and 300 meters of range for IP access.
 
 ## Overview
 Plug-and-play smart home integration to connect and control IoT devices over powerline and Matter standard.
@@ -18,10 +18,10 @@ The project consists of two parts:
 ## Hardware
 For the hardware, we have created a PCB based on a ESP32-S3 with built in ethernet jack (RJ45). This PCB serves as hardware attached on top of the WisLink LX200V20 EVB boards. In the future, we plan on adapting the powerline module onto the PCB as well.
 
-- Raspberry Pi 4
+- Raspberry Pi 4 Model B
 - ESP32-S3 
 - WisLink LX200V20 EVB
-- Custom ESP32S3 Ethernet PCB
+- Custom ESP32-S3 Ethernet PCB
 
 ## Software
 For software, we code in C/C++, we use [esp-idf](https://docs.espressif.com/projects/esp-idf/en/v5.2/esp32s3/get-started/index.html)
@@ -42,7 +42,6 @@ To get started, first go to [Docs](https://github.com/znicholson17/P-Linked/tree
 From there, build your applications using [BUILD.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/BUILD.md) and commission using [COMMISSION.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/COMMISSION.md)  
 
 
-Last Updated on 2/26/2024
 ### Authors
 
 - [Zachary Nicholson](https://github.com/znicholson17)
