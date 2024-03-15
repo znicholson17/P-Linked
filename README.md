@@ -1,12 +1,14 @@
-# Senior Design Capstone Project
+# Power Line Integrated Network Controlling Electronic Devices (P-LINKED)
+## Senior Design Capstone Project
 This is an ESP32 project that will demonstrate a powerline based ESP32 Smart Home system.
 
 ## Diagram of P-LINKED network
 
-<img src = "https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/P-LINKED_DIAGRAM.png" width="400" hiehgt="400">
+<img src = "https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/P-Linked_Final_NetMap.png" width="500" hiehgt="500">
 The diagram shown above describes how nodes and hub communicate with each other. For hub and nodes, the devices are connected to an electrical outlet using a powerline transciever. 
-From there, each device communicates over powerline.   
-
+From there, each device communicates over powerline.  
+  
+  
 Each device is limited to a theoretical speed of up to 200Mbps and 300 meters of range for IP access.
 
 ## Overview
@@ -24,10 +26,10 @@ For the hardware, we have created a PCB based on a ESP32-S3 with built in ethern
 - Custom ESP32-S3 Ethernet PCB
 
 ## Software
-For software, we code in C/C++, we use [esp-idf](https://docs.espressif.com/projects/esp-idf/en/v5.2/esp32s3/get-started/index.html)
-and [esp-matter](https://docs.espressif.com/projects/esp-matter/en/latest/esp32s3/developing.html#),
-setup can be found in [INSTALL.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/INSTALL.md).   
-The prefered operating system is [Ubuntu 20.04 LTS](https://ubuntu.com/download/desktop) or later.
+- [esp-idf](https://docs.espressif.com/projects/esp-idf/en/v5.2/esp32s3/get-started/index.html)
+- [esp-matter](https://docs.espressif.com/projects/esp-matter/en/latest/esp32s3/developing.html#)
+- [Ubuntu 20.04 LTS](https://ubuntu.com/download/desktop) or later.
+- [HomeAssistant](https://www.home-assistant.io/)
 
 
 ## Project Structure
