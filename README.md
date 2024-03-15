@@ -1,63 +1,49 @@
-# WIP Senior Design Capstone
-
+# Senior Design Capstone Project
 This is an ESP32 project that will demonstrate a powerline based ESP32 Smart Home system.
 
+## Diagram of P-LINKED network
+
+<img src = "https://github.com/znicholson17/P-Linked/blob/main/Docs/Images/P-LINKED_DIAGRAM.png" width="400" hiehgt="400">
+The diagram shown above describes how nodes and hub communicate with each other. For hub and nodes, the devices are connected to an electrical outlet using a powerline transciever. 
+From there, each device communicates over powerline.   
+
+Each device is limited to 200Mbps and 300 meters of range for IP access.
+
+## Overview
+Plug-and-play smart home integration to connect and control IoT devices over powerline and Matter standard.
+The project consists of two parts:
+1. Hardware
+2. Software
+
+## Hardware
+For the hardware, we have created a PCB based on a ESP32-S3 with built in ethernet jack (RJ45). This PCB serves as hardware attached on top of the WisLink LX200V20 EVB boards. In the future, we plan on adapting the powerline module onto the PCB as well.
+
+- Raspberry Pi 4
+- ESP32-S3 
+- WisLink LX200V20 EVB
+- Custom ESP32S3 Ethernet PCB
+
+## Software
+For software, we code in C/C++, we use [esp-idf](https://docs.espressif.com/projects/esp-idf/en/v5.2/esp32s3/get-started/index.html)
+and [esp-matter](https://docs.espressif.com/projects/esp-matter/en/latest/esp32s3/developing.html#),
+setup can be found in [INSTALL.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/INSTALL.md).   
+The prefered operating system is [Ubuntu 20.04 LTS](https://ubuntu.com/download/desktop) or later.
+
+
 ## Project Structure
-
-The project follows the recommended project structure for ESP32 applications. The key directories and files are organized as follows:
-
-- `components/`: Custom ESP32 components
-    - `socket_server/`: Custom component for the socket server functionality
-- `main/`: Main application source code
-- `CMakeLists.txt`: Top-level CMake configuration for the entire project
-- `sdkconfig`: Project-specific ESP-IDF configuration
-- `README.md`: Project documentation
+The project follows the recommended project structure for ESP32 applications:
+- `hub/`: This folder serves as the guide for setup of a Matter hub.
+- `nodes/`: This folder serves as the guide for setup and installation of an individual node(s)
+- `Docs/`: This folder serves as documentation for the P-LINKED project.
+- `ESP32_S3_ETH/`: This folder serves as the KiCad project file for the project.
 
 ## Getting Started
+To get started, first go to [Docs](https://github.com/znicholson17/P-Linked/tree/main/Docs) folder and read the [INSTALL.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/INSTALL.md).
+From there, build your applications using [BUILD.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/BUILD.md) and commission using [COMMISSION.md](https://github.com/znicholson17/P-Linked/blob/main/Docs/COMMISSION.md)  
 
-To build and run this project on your ESP32-S3, follow these steps:
 
-1. Set up your development environment by installing the ESP-IDF framework. Follow the instructions in the [ESP-IDF documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html).
-
-2. Clone or download this project to your development environment.
-
-3. Configure your Wi-Fi credentials:
-    - Open the `sdkconfig` file.
-    - Update `CONFIG_WIFI_SSID` and `CONFIG_WIFI_PASSWORD` with your Wi-Fi network name (SSID) and password.
-
-4. Build the project:
-    ```bash
-    idf.py build
-    ```
-
-5. Flash the project to your ESP32-S3:
-    ```bash
-    idf.py -p (PORT) flash
-    ```
-   Replace `(PORT)` with the COM port or USB device of your ESP32-S3.
-
-6. Monitor the output:
-    ```bash
-    idf.py -p (PORT) monitor
-    ```
-   This will display the serial output of your ESP32-S3.
-
-The ESP32-S3 will start as a Wi-Fi station, create a socket server, and listen for incoming connections.
-
-## Customization
-
-- You can extend the functionality of the project by adding custom components or features to the `components/` directory.
-- Modify the `main/main.c` file to include additional application-specific code.
-
-## License
-
-This project is distributed under the MIT License. See [LICENSE](LICENSE) for more details.
-
-## Acknowledgments
-
-This project is based on the ESP-IDF framework and follows best practices recommended by Espressif.
-
-## Author
+Last Updated on 2/26/2024
+### Authors
 
 - [Zachary Nicholson](https://github.com/znicholson17)
 - [Theodore Tang](https://github.com/leunknown)
