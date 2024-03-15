@@ -1,5 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "Proj-Symbols")(type "KiCad")(uri "${KIPRJMOD}/Proj-Symbols.pretty")(options "")(descr ""))
-  (lib (name "symbols")(type "KiCad")(uri "C:/Users/Theo/Desktop/kicad-libraries-main/kicad-libraries-main/symbols.pretty")(options "")(descr ""))
-)
